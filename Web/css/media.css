@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+@media only screen and (max-width: 620px)
+{
+	/* common.css */
+	h1 {
+		font-size: 24px;
+	}
+	h2 {
+		font-size: 18px;
+		line-height: 18px;
+	}
+	.wrap {
+		max-width: 431px;
+	}
+
+	/* #header */
+	#header .wrap>div, article.temperature, article.humidity, article.water, article.food {
+		margin: 0 30px;
+	}
+	#header .wrap {
+		margin-top: 10px; margin-bottom: 10px;
+	}
+	#header .wrap h1 {
+		line-height: 45px;
+		margin-right: 15px;
+	}
+	#header .wrap img {
+		height: 45px;
+		width: 45px;
+	}
+
+	/* main */
+	article.temperature, article.humidity, article.water, article.food {
+		margin-top: 15px; margin-bottom: 15px;
+	}
+	ul article.content section h2, article.food h2 {
+		margin-bottom: 10px;
+	}
+	ul article.content img, .food img {
+		height: 60px;
+		width: 60px;
+	}
+	ul article.content section.cover {
+		width: 100%;
+	}
+	ul article.content section.cover div.progressbar {
+		display: none;
+	}
+	ul article.content section.cover p {
+		line-height: 32px;
+		height: 32px;
+		max-width: 140px;
+		width: 100%;
+	}
+
+	/* article.food */
+	article.food {
+		margin-bottom: 30px;
+	}
+	article.food section.food {
+		width: auto;
+	}
+	article.food div.food p {
+		width: 45%;
+		min-width: 70px;
+		line-height: 45px;
+	}
+	#full {
+		margin-right: 0;
+	}
+
+	/* footer */
+	#footer {
+		background-color: #333;
+		color: #999;
+	}
+	#footer p {
+		margin: 30px 15px 8px 15px;
+	}
+	#footer address {
+		margin: 0 15px 30px 15px;
+	}
+
+}
+
+@media only screen and (max-width: 290px)
+{
+	#header .wrap img {
+		display: none;
+	}
+	article.food div.food p {
+		width: 100%;
+		line-height: 45px;
+	}
+	#full, #feed {
+		float: none;
+	}
+}
+
+@media only screen and (max-width: 260px)
+{
+	#header .wrap h1 {
+		display: none;
+	}
+	#header .wrap img {
+		display: block;
+	}
+	h2 {
+		display: none;
+	}
+	ul article.content section.cover p {
+		line-height: 60px;
+		height: 60px;
+	}
+	section.food {
+		min-width: 70px;
+	}
+	article.food div.food {
+		min-width: 70px;
+	}
+	article.food div.food p {
+		font-size: 16px;
+		letter-spacing: 0px;
+		min-width: 70px;
+	}
+	#footer {
+		font-size: 14px;
+	}
+}

@@ -1,0 +1,153 @@
+/* index.css */
+#header, #main, #footer {
+	width: 100%;
+}
+
+#header .wrap>div, article.temperature, article.humidity, article.water, article.food {
+	margin: 0 60px;
+}
+h2 {
+	line-height: 24px;
+}
+
+
+
+/* header */
+#header {
+	overflow: hidden;
+	background-color: #fc6;
+	color: #fff;
+}
+#header .wrap {
+	margin-top: 15px; margin-bottom: 15px;
+}
+#header .wrap h1 {
+	float: left;
+	line-height: 60px;
+	margin-right: 45px;
+	overflow: hidden;
+}
+#header .wrap img {
+	/* display: block; */
+	height: 60px;
+	width: 60px;
+}
+#header .wrap div.cover {
+	margin: 0 auto;
+	width: fit-content;
+	overflow: hidden;
+}
+
+
+
+/* main */
+#main ul li {
+	overflow: hidden;
+}
+article.temperature, article.humidity, article.water, article.food {
+	margin-top: 30px; margin-bottom: 30px;
+}
+ul article.content {
+	overflow: hidden;
+}
+ul article.content>section {
+	overflow: hidden;
+}
+ul article.content section h2, article.food h2 {
+	margin-bottom: 15px;
+}
+ul article.content img, .food img {
+	float: left;
+	height: 90px;
+	width: 90px;
+	margin-right: 30px;
+}
+ul article.content section.cover {
+	/* height: 66px; */
+	width: 100%;
+	overflow: hidden;
+}
+ul article.content section.cover div.progressbar {
+	max-width: 264px;
+	width: 100%;
+	background-color: #fc6;
+	float: left;
+	overflow: hidden;
+	padding: 18px;
+}
+ul article.content section.cover div.progressbar div.bar {
+	height: 15px;
+	width: 50%;
+	background-color: #f60;
+	position: relative;
+	float: left;
+	z-index: 1;
+}
+ul article.content section.cover div.progressbar div.bar_back {
+	width : 100%;
+	/* margin: 18px 18px 0 18px; */
+	height: 15px;
+	background-color: #fff;
+}
+ul article.content section.cover p {
+	width: 60px;
+	height: 51px;
+	color: #fff;
+	line-height: 51px;
+	overflow: hidden;
+	text-align: center;
+	font-weight: bold;
+	background-color: #f90;
+	font-size: 24px;
+	letter-spacing: 1px;
+}
+
+/* article.food */
+article.food {
+	margin-bottom: 45px;
+}
+article.food, div.food, section.food {
+	overflow: hidden;
+}
+article.food section.food {
+	width: 360px;
+}
+article.food div.food p {
+	width: 165px;
+	text-align: center;
+	line-height: 90px;
+	font-size: 24px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+/* .food > id */
+#full, #feed {
+	float: left;
+}
+#full {
+	color: #fff;
+	margin-right: 30px;
+	background-color: #fc6;
+}
+#feed {
+	background-color: #f90;
+}
+#feed:hover {
+	cursor: pointer;
+}
+
+
+
+/* footer */
+#footer {
+	background-color: #333;
+	color: #999;
+}
+#footer p {
+	margin-top: 30px;
+	margin-bottom: 8px;
+}
+#footer address {
+	margin-bottom: 30px;
+}
